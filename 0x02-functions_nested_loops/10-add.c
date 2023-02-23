@@ -2,14 +2,15 @@
 /**
  * add - function that adds two integers
  *
- * @a and b: parameters to be used
+ * @a: first parameter
+ * @b: second parameter
  *
- * Returns: result
+ * Return: sum
  */
-
 int add(int a, int b)
 {
-	int a;
-	int b;
+	char sum;
 
+	sum = a + b;
+	return (sum);
 }
