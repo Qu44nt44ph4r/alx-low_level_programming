@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - function that prints the sign of a number
+ * print_diagonal - function that draws a diagonal line on the terminal
  *
  * @n: parameter to be used
  *
