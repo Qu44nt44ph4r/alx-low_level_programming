@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * print_sign - function that prints from 0 to 100
+ * main - entry point
  *
  * Return: always 0
  */
 
-int fizz_buzz(void);
+int main(void);
 {
 	int i;
 
@@ -28,6 +28,10 @@ int fizz_buzz(void);
 		else
 		{
 			printf("%d", i);
+		}
+		if (i != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
