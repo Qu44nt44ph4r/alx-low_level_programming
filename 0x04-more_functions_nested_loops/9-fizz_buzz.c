@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - program that prints Fizz Buzz
  *
  * Return: always 0
  */
 
-int main(void);
+int main(void)
 {
 	int i;
 
