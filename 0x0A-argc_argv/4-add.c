@@ -8,7 +8,6 @@ int main(int argc, char *argv[])
 	int j;
 	int add;
 
-	if (argc != 3)
 
 	/*Check if both arguments are valid positive integers*/
 	for (i = 1; i < argc; i++)
