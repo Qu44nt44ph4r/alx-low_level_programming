@@ -17,9 +17,9 @@ int main(int argc, char *argv[])
 	}
 
 	/*Check if both arguments are valid positive integers*/
-	for (i = 1; i < argc; ++i)
+	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0'; ++j)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (!isdigit(argv[i][j]))
 			{
