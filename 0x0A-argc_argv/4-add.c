@@ -4,17 +4,11 @@
 
 int main(int argc, char *argv[])
 {
-	int num1;
-	int num2;
-	int result;
 	int i;
 	int j;
+	int add;
 
 	if (argc != 3)
-	{
-		printf("Usage: %s <num1> <num2>\n", argv[0]);
-		return (0); /*Exit with an error code*/
-	}
 
 	/*Check if both arguments are valid positive integers*/
 	for (i = 1; i < argc; i++)
@@ -29,11 +23,8 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	num1 = atoi(argv[1]); /*Convert the first argument to an integer*/
-	num2 = atoi(argv[2]); /*Convert the second argument to an integer*/
+	add =+ atoi(argv[i]); /*Add the two numbers*/
 
-	result = num1 + num2; /*Add the two numbers*/
-
-	printf("%d\n", result); /*Print the result alone*/
+	printf("%d\n", add); /*Print the result alone*/
 	return (0);
 }
