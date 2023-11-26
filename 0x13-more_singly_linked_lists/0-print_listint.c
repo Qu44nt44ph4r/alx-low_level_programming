@@ -5,21 +5,20 @@
  * print_listint - a function that prints all the elements of a listint_t list.
  * @h: a pointer to listint_t list.
  *
- * Return:  number of nodes.
+ * Return: integer.
  */
 
 size_t print_listint(const listint_t *h)
 {
-	unsigned int count = 0;
 	const listint_t *temp;
+	unsigned int counter = 0;
 
 	temp = h;
-
 	while (temp)
 	{
 		printf("%d\n", temp->n);
-		count++;
+		counter++;
 		temp = temp->next;
 	}
-	return (count);
+	return (counter);
 }
