@@ -2,28 +2,43 @@
 #include <stdlib.h>
 
 /**
- * create_array - creates an array of chars.
- * @size: size of the array.
- * @c: storaged char
- *
- * Return: pointer of an array of chars
-*/
+ * _strdup - A function that returns a pointer to a new string
+ * which is a duplicate of the string
+ * @str: An input pointer of the string to copy.
+ * Return: pointer to a new string or NULL if str = NULL
+ */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-	char *cr;
-	unsigned int i;
+	char *new_str, *start;
+	int i = 0, len = 0;
 
-	if (size == 0)
+	if (str == NULL)
 		return (NULL);
 
-	cr = malloc(sizeof(c) * size);
+	start = str;
 
-	if (cr == NULL)
+	while (*str)
+	{
+		len++;
+		str++;
+
+	}
+
+	str = start;
+	new_str = malloc(sizeof(char) * (len + 1));
+	start = new_str;
+
+	if (new_str != NULL)
+	{
+		for (; i < len; i++)
+		{
+			new_str[i] = *str;
+			str++;
+		}
+		new_str[i] = '\0';
+		return (start);
+	}
+	else
 		return (NULL);
-
-	for (i = 0; i < size; i++)
-		cr[i] = c;
-
-	return (cr);
 }
